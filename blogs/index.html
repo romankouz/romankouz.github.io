@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Calvin</title>
+    <title>Roman's Ramblings</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -46,11 +46,12 @@
     ================================================== -->
     <header class="s-header">
 
-        <div class="s-header__logo">
+        <!-- Removed Logo -->
+        <!-- <div class="s-header__logo">
             <a class="logo" href="index.html">
                 <img src="images/logo.svg" alt="Homepage">
             </a>
-        </div>
+        </div> -->
 
         <div class="row s-header__navigation">
 
@@ -718,12 +719,72 @@
 
    </footer> <!-- end s-footer -->
 
-
     <!-- Java Script
     ================================================== -->
     <script src="js/jquery-3.5.0.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        function getQueryParameter(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+              var pair = vars[i].split("=");
+              if (pair[0] == variable) {
+                return pair[1];
+              }
+            }
+            return (1);
+        }
+        // Capture the `role` query parameter from the URL.
+        var page = getQueryParameter('page');
+        $('#' + page).show();
+        document.getElementById('pages').innerHTML = `            <nav class="pgn">
+                <ul>
+                    <li>
+                        <span class="pgn__prev" href="#0">
+                            Prev
+                        </span>
+                    </li>
+                    <li><span class="pgn__num current">1</span></li>
+                    <li><a id="pagebutton" class="pgn__num" href="?page=2">2</a></li>
+                    <li><a id="pagebutton" class="pgn__num" href="?page=3">3</a></li>
+                    <li><a id="pagebutton" class="pgn__num" href="?page=4">4</a></li>
+                    <li><a id="pagebutton" class="pgn__num" href="?page=5">5</a></li>
+                    <li><span class="pgn__num dots">…</span></li>
+                    <li><a id="pagebutton" class="pgn__num" href="?page=8">8</a></li>
+                    <li>
+                        <span class="pgn__next" href="#0">
+                            Next
+                        </span>
+                    </li>
+                </ul>
+            </nav> <!-- end pgn -->`
+        var substring = '';
+        for (i = 1; i <= 8; i++) {
+            if (i == page) {
+                substring += '<li><span class="pgn__num current">' + i + '</span></li>'
+            } else {
+                substring += '<li><a id="pagebutton" class="pgn__num" href="?page=' + i + '">' + i + '</a></li>'
+            }
+        }
+        document.getElementById('pages').innerHTML = `<nav class="pgn">
+                                                        <ul>
+                                                            <li>
+                                                                <span class="pgn__prev" href="#0">
+                                                                    Prev
+                                                                </span>
+                                                            </li>` + substring + `                    <li>
+                        <span class="pgn__next" href="#0">
+                            Next
+                        </span>
+                    </li>
+                </ul>
+            </nav> <!-- end pgn -->`
+    </script>
+
+    
+
 
 </body>
 
