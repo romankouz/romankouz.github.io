@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Roman Kouznetsov: Imposter Syndrome</title>
+    <title>Roman Kouznetsov: Weak Ties</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -118,34 +118,65 @@
 
                 <article class="s-content__entry">
 
-                    <div class="s-content__entry-header" style="margin-bottom: var(--vspace-0_5)">
-                        <h1 style="font-family: Expletus Sans" class="s-content__title">Roman's Ramblings: On My Dealings with Imposter Syndrome</h1>
+                    <div class="s-content__entry-header">
+                        <h1 style="font-family: Expletus Sans" class="s-content__title">Weak Ties: A Formal Explanation of LinkedIn's Value</h1>
                     </div> <!-- end s-content__entry-header -->
 
-                    <!-- <div class="s-content__media">
+                    <div class="s-content__media">
                         <img src="LI-Logo.png" 
                                 srcset="LI-Logo.png 2100w, 
                                         LI-Logo.png 1050w, 
                                         LI-Logo.png 525w" sizes="(max-width: 2100px) 700px" alt="" class="center">
-                    </div> -->
+                    </div> <!-- end s-content__media -->
 
-                    <div class="s-content__primary" style="justify-content: left;">
+                    <div class="s-content__primary">
 
                         <div class="s-content__page-content">
 
-                            <a href="#Intro">Introduction</a>
-                            <br>
-                            <a href="#Background">Background</a>
-                            <br>
-                            <a href="#Past">Imposter Syndrome through the Years</a>
-                            <br>
-                            <a href="#Current">Current Feelings</a>
-                            <br>
-                            <a href="#Suggestions">Suggestions for Others</a>
-                            <br>
-
                             <p class="lead">
-                                
+                                LinkedIn is omnipresent in today's age. Every business, employee, website, and newly-born infant seemingly has a LinkedIn account. However, while I have had an account 
+                                since senior year of college, I never truly appreciated the value that LinkedIn provides. As mind-numbing as the platform can be at times, there 
+                                is actually a way I can convince you - quantifiably mind you! - that LinkedIn provides you with a tremendous amount of value even if it seems unintuitive or 
+                                useless to you. 
+                                <br>
+                                <br>
+                                To start, let me posit you a question: 
+                                <br>
+                                <br>
+                                <b>Who is more likely to help you out in your career: a close friend or a distant acquaintance?</b>
+                                <br>
+                                <br>
+                                Your immediate response would probably be to say "a close friend... obviously" followed up by "why would someone I don't really know
+                                try to help me?"
+                                <br>
+                                <br>
+                                While the response is perfectly justified (and in particular instances incredibly true), allow me to ask another question:
+                                <br>
+                                <br>
+                                <b>In your history, who has had more impact on your professional career: a close friend or a distant acquaintance?</b>
+                                <br>
+                                <br>
+                                For a select few, the answer might not change, but I'm willing to bet that many of you reading can recall a particular person that had an overwhleming contribution
+                                to your professional development, and yet you would be hesitant to refer to them as a friend, less so a close friend. This concept actually has a term in the 
+                                realm of Graph Theory and Networks: <i><u>weak ties</u></i>.
+                                <br>
+                                <br>
+                                Weak ties are actually something that arise in the <a style="color: blue" href="https://en.wikipedia.org/wiki/Triadic_closure#Strong_Triadic_Closure_Property_and_local_bridges"> 
+                                Strong Triadic Closure Property</a>, but for now lets just use an over-simplified network for this exercise. We will say a strong tie is a friend and a weak tie
+                                is an acquaintance.  
+                                For the sake of this explanation, let's assume that the network for LinkedIn is <u>fully connected</u>; this just means that if I start at any user, 
+                                I can get to any other user by taking connections paths. This is the same concept that is more colloquially known as "Six Degrees of Kevin Bacon" 
+                                showcasing that all actors are connected because each can reach Kevin Bacon.
+                                <br>
+                                <br>                                                           
+                                While I understand that the core takeaway is the same old "networking is valuable because it puts you in touch with new thoughts, new people, and new ideas,"
+                                I hope I have given you a new visual perspective on weak ties and why they are so valuable. Your LinkedIn network probably contains a few of these weak ties 
+                                and maybe appreciating and utilizing them in the future can lead to your next big step. 
+                                <br>
+                                <br>
+                                <img src="graph.png" class="center">
+                                <img src="unconnected_graph.png" class="center">
+                                <!-- Try using this for TESTS OF UNDERSTANDING: https://stackoverflow.com/questions/45611758/jquery-faq-details-show-hide -->
                             </p>
 
                             <br>
@@ -157,8 +188,10 @@
 
             </div> <!-- end column -->
         </div> <!-- end row -->
+    
 
     </section> <!-- end s-content -->
+
 
 
     <!-- footer
@@ -224,6 +257,17 @@
     <script src="../js/jquery-3.5.0.min.js"></script>
     <script src="../js/plugins.js"></script>
     <script src="../js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('.markdown-block .sqs-block-content h2').addClass('ui-closed').css('cursor','pointer');
+        $(".markdown-block .sqs-block-content h2").nextUntil("h2").slideToggle();
+        $(".markdown-block .sqs-block-content h2").click(function() {
+          
+          $(this).nextUntil("h2").slideToggle();
+          $(this).toggleClass('ui-closed ui-open');
+          });
+        });
+    </script>
 
 </body>
 

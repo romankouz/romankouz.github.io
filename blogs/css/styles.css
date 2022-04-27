@@ -4443,7 +4443,7 @@ body.search-is-visible {
 .s-content {
     --row-max-width: 1400px;
     background-color: white;
-    padding-top: calc(5.5 * var(--space));
+    padding-top: calc(1.2 * var(--space));
 }
 
 .s-content--no-top-padding {
@@ -4540,9 +4540,9 @@ body.search-is-visible {
     justify-content: center;
 }
 
-.s-content__primary img {
+/* .s-content__primary img {
     margin: var(--vspace-1) 0 var(--vspace-1);
-}
+} */
 
 .s-content__entry-content {
     -ms-flex: 1 1 0%;
@@ -5251,4 +5251,11 @@ body.search-is-visible {
     .comment-respond form {
         padding-top: var(--vspace-1);
     }
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
