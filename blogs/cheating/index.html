@@ -22,6 +22,8 @@
     ================================================== -->
     <script src="../js/modernizr.js"></script>
     <script defer src="../js/fontawesome/all.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -119,65 +121,167 @@
                 <article class="s-content__entry">
 
                     <div class="s-content__entry-header">
-                        <h1 style="font-family: Expletus Sans" class="s-content__title">Weak Ties: A Formal Explanation of LinkedIn's Value</h1>
+                        <h1 style="font-family: Expletus Sans" class="s-content__title">College Students are Incentivised to Cheat: Here's the Solution</h1>
                     </div> <!-- end s-content__entry-header -->
 
                     <div class="s-content__media">
-                        <img src="LI-Logo.png" 
-                                srcset="LI-Logo.png 2100w, 
-                                        LI-Logo.png 1050w, 
-                                        LI-Logo.png 525w" sizes="(max-width: 2100px) 700px" alt="" class="center">
+                        <img src="../images/titles/cheating.jpg" class="center">
                     </div> <!-- end s-content__media -->
 
                     <div class="s-content__primary">
 
                         <div class="s-content__page-content">
 
-                            <p class="lead">
-                                LinkedIn is omnipresent in today's age. Every business, employee, website, and newly-born infant seemingly has a LinkedIn account. However, while I have had an account 
-                                since senior year of college, I never truly appreciated the value that LinkedIn provides. As mind-numbing as the platform can be at times, there 
-                                is actually a way I can convince you - quantifiably mind you! - that LinkedIn provides you with a tremendous amount of value even if it seems unintuitive or 
-                                useless to you. 
+                            Sections:
+                            <ol>
+                                <li><a href="#intro">Introduction</a></li>
+                                <li><a href="#gt">Game Theory Representation</a></li>
+                                <li><a href="#solutions">Solutions</a></li>
+                            </ol>
+
+                            <div class="lead" id="intro" text-align="left">
+                                As someone who works as an educator at the University of Michigan, I know how vexed a statement this is, but it's incredibly difficult to 
+                                ignore the hard truth: it is <i>immensely</i> profitable for students to cheat on exams and projects. I obviously do not condone this behavior
+                                and reprimand it in my lab sections should I discover it happening, but over time I have grown more sympathetic of college students, regardless
+                                of their histories with academic integrity. 
+
+                                The concepts I explain here can be applied to situations outside of academia. A prominent, similar example includes using white text in resumes to trick Applicant Tracking
+                                Systems (ATSs) into tricking the system not to filter your resume despite the qualifications not being fulfilled. 
+
+                                This post aims to illustrate where the motivation to violate academic integrity stems from, create a framework that can quantify the mechanism of cheating, 
+                                and what we can do to mitigate future violations.
+
+                            </div>
+                            <br>
+
+                            <div class="lead" id="gt" text-align="left">
+                            
+                                Using Game Theory, we can create a scenario where a student needs to make a decision about whether to cheat or not and
+                                make this decision based on how beneficial it is for said student. To create this framework we will use the following assumptions.
                                 <br>
                                 <br>
-                                To start, let me posit you a question: 
                                 <br>
+
+                                <ol style="padding-left: 60px;">
+                                    <li>The student pool is large enough where we can realistically analyze one student cheating at a time, even though many cheating efforts take multiple people.
+                                        Therefore, the players in this game are "Random Student" and "All Other Students."
+                                    </li>
+                                    <li>If a student decides to cheat, it doesn't take away from the scores of other students - it simply adds to the cheaters score.</li>
+                                    <li>Students make their decisions simultaneously, but are aware of the payout structure.</li>
+                                    <li>For now, cheaters will not get caught in this exercise. <b>We will relax this assumption later.</b></li>
+                                </ol>
+
+                                Utilizing the outlined assumptions, we can create a payout matrix as shown below that demonstrates what happens when both parties - "Random Student" and "All Other Students" - 
+                                make their decisions. The payouts can be interpreted as (<i>payout for Random Student</i> , <i>payout for All Other Students</i>)
+
+                                <table class="wikitable" style="border: 1; padding: 2; border-spacing: 2; text-align:center;">
+                                    <caption>
+                                    </caption>
+                                    <tbody><tr>
+                                    <td colspan="2" rowspan="2" bgcolor="#c8d1b1"><big><b class="center">Student Cheating</b></big>
+                                    </td>
+                                    <td colspan="2" bgcolor="#fcf3d3"><center>All Other Students</center>
+                                    </td></tr>
+                                    <tr bgcolor="#ebe294">
+                                    <td><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cheat</center></td>
+                                    <td><center>Don't Cheat</center></td>
+                                    </tr>
+                                    <tr>
+                                    <td rowspan="2" bgcolor="#fcf3d3"><center>&nbsp;&nbsp;&nbsp;&nbsp;Random Student</center>
+                                    </td>
+                                    <td bgcolor="#ebe294"><center>Cheat</center>
+                                    </td>
+                                    <td><center>(0,0)</center></td>
+                                    <td><center>(+r,0)</center>
+                                    </td></tr>
+                                    <tr>
+                                    <td bgcolor="#ebe294"><center>Don't Cheat</center>
+                                    </td>
+                                    <td><center>(0,+r)</center></td>
+                                    <td><center>(0,0)</center>
+                                    </td></tr>
+                                    
+                                    </tbody>
+                                </table>
+                                This table seems to suggest that cheating is a dominated strategy, i.e. there is no penalty to cheating. Obviosuly, this is not the case; so far we have just demonstrated
+                                how we can neatly evaluate the payout structures. 
+                                Now that we understand how the table is created, we need to relax the assumption of cheaters never getting caught and incorporate that into our model. 
+                                It is important to acknowledge that many students cheat and get away with it. This means that if all cheaters are treated equally, they each have the same
+                                random chance of getting caught (though this ignores the intelligence of those executing the cheat). Let's denote the probability of getting caught by \(p\).
+                                So, for a random cheater, they have a \((1 - p)\) of getting away with it and getting a reward of \( r \). However, what reward needs to be given in the event 
+                                the cheater gets caught? For now, we will denote it by \( t \), but we should note that cost of getting caught is going to be significantly higher than the 
+                                reward of a few extra points on an assessment. Many universities have strict academic integrity policies (INLCLUDE LINK) and getting caught will nearly always result
+                                in more pain than the reward is ever worth. 
+
+                                If we update the payout matrix to reflect these developments, it looks something like this.
+
+                                
+                                <table class="wikitable" style="border: 1; padding: 2; border-spacing: 2; text-align:center;">
+                                    <caption>
+                                    </caption>
+                                    <tbody><tr>
+                                    <td colspan="2" rowspan="2" bgcolor="#c8d1b1"><big><b class="center">Student Cheating</b></big>
+                                    </td>
+                                    <td colspan="2" bgcolor="#fcf3d3"><center>All Other Students</center>
+                                    </td></tr>
+                                    <tr bgcolor="#ebe294">
+                                    <td><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cheat</center></td>
+                                    <td><center>Don't Cheat</center></td>
+                                    </tr>
+                                    <tr>
+                                    <td rowspan="2" bgcolor="#fcf3d3"><center>&nbsp;&nbsp;&nbsp;&nbsp;Random Student</center>
+                                    </td>
+                                    <td bgcolor="#ebe294"><center>Cheat</center>
+                                    </td>
+                                    <td><center>(\( 0*(1-p) + t*p \), \( 0*(1-p) + t*p \)</center></td>
+                                    <td><center>(\( r*(1-p) + t*p \),0)</center>
+                                    </td></tr>
+                                    <tr>
+                                    <td bgcolor="#ebe294"><center>Don't Cheat</center>
+                                    </td>
+                                    <td><center>(0,\( r*(1-p) + t*p \))</center></td>
+                                    <td><center>(0,0)</center>
+                                    </td></tr>
+                                    
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br>
+
+                            <div class="lead" id="solutions" text-align="left">
+                                So, if students are clearly incentivized to cheat, how do we prevent it? Personally, I have tunnel vision on a singular solution; however, to make this seem less
+                                biased, I have included a few solutions in increasing order of effectivenes (obviously from a subjective point of view).
                                 <br>
-                                <b>Who is more likely to help you out in your career: a close friend or a distant acquaintance?</b>
+
+                                <b>1. Increase Vigilance for Cheating Detection (Rating: <span style="color: red">2</span>/10)</b><br>
+
+                                This solution can also be thought of increasing \( p \).
                                 <br>
+
+                                <b>2. Create a Cheater's Adjustment (Rating: <span style="color: red">3</span>/10)</b><br>
+
+                                This idea has a varying effectiveness level that is dependent on \( p \).
                                 <br>
-                                Your immediate response would probably be to say "a close friend... obviously" followed up by "why would someone I don't really know
-                                try to help me?"
+
+                                <b>3. Create Cheating-Robust Environments (Rating: <span style="color: #FFAE42">5</span>/10)</b><br>
+
+                                This one is slightly different from the first solution in that the preventative measures are taken before an assessment takes place and, therefore,
+                                before any cheating can take place. This sidesteps the false accusations issue and makes the barrier of entry to cheating signficiantly higher.
+                                While this could be effective with smaller class sizes, this setup could take a tremendous amount of effort to execute and I imagine the difficulty
+                                of setup increases somewhat exponentially with class size. 
+
+                                Makes a universal policy more difficult to follow.
                                 <br>
+
+                                <b>4. Do Away with Time Sensitive Assessments (Rating: <span style="color: #32CD32">8</span>/10)</b><br>
+
+                                Based on the ratings (that are obviously super detailed) I like this solution the best. 
+
+                                The obvious drawback behind this solution is that the assessments themselves become more time consuming for both the students to complete and for the 
+                                instruction staff to grade. This can definitely be strenuous for large class sizes that would otherwise have a facile grading process of grading only a handful of
+                                relatively short assessments. However, 
                                 <br>
-                                While the response is perfectly justified (and in particular instances incredibly true), allow me to ask another question:
-                                <br>
-                                <br>
-                                <b>In your history, who has had more impact on your professional career: a close friend or a distant acquaintance?</b>
-                                <br>
-                                <br>
-                                For a select few, the answer might not change, but I'm willing to bet that many of you reading can recall a particular person that had an overwhleming contribution
-                                to your professional development, and yet you would be hesitant to refer to them as a friend, less so a close friend. This concept actually has a term in the 
-                                realm of Graph Theory and Networks: <i><u>weak ties</u></i>.
-                                <br>
-                                <br>
-                                Weak ties are actually something that arise in the <a style="color: blue" href="https://en.wikipedia.org/wiki/Triadic_closure#Strong_Triadic_Closure_Property_and_local_bridges"> 
-                                Strong Triadic Closure Property</a>, but for now lets just use an over-simplified network for this exercise. We will say a strong tie is a friend and a weak tie
-                                is an acquaintance.  
-                                For the sake of this explanation, let's assume that the network for LinkedIn is <u>fully connected</u>; this just means that if I start at any user, 
-                                I can get to any other user by taking connections paths. This is the same concept that is more colloquially known as "Six Degrees of Kevin Bacon" 
-                                showcasing that all actors are connected because each can reach Kevin Bacon.
-                                <br>
-                                <br>                                                           
-                                While I understand that the core takeaway is the same old "networking is valuable because it puts you in touch with new thoughts, new people, and new ideas,"
-                                I hope I have given you a new visual perspective on weak ties and why they are so valuable. Your LinkedIn network probably contains a few of these weak ties 
-                                and maybe appreciating and utilizing them in the future can lead to your next big step. 
-                                <br>
-                                <br>
-                                <img src="graph.png" class="center">
-                                <img src="unconnected_graph.png" class="center">
-                                <!-- Try using this for TESTS OF UNDERSTANDING: https://stackoverflow.com/questions/45611758/jquery-faq-details-show-hide -->
-                            </p>
+                            </div>
 
                             <br>
 
