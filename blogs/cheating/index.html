@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Roman Kouznetsov: Weak Ties</title>
+    <title>Roman's Ramblings</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -139,26 +139,35 @@
                                 <li><a href="#solutions">Solutions</a></li>
                             </ol>
 
-                            <div class="lead" id="intro" text-align="left">
+                            <h2 id = "intro">Introduction</h2><br>
+
+                            <div class="lead" text-align="left" style="font-size:18px">
                                 As someone who works as an educator at the University of Michigan, I know how vexed a statement this is, but it's incredibly difficult to 
                                 ignore the hard truth: it is <i>immensely</i> profitable for students to cheat on exams and projects. I obviously do not condone this behavior
-                                and reprimand it in my lab sections should I discover it happening, but over time I have grown more sympathetic of college students, regardless
-                                of their histories with academic integrity. 
+                                and reprimand it in my lab sections should I discover it happening, but over time I have grown more sympathetic of college students struggling 
+                                with the choice to cheat or remain honest, regardless of their histories with academic integrity.<br><br>
 
                                 The concepts I explain here can be applied to situations outside of academia. A prominent, similar example includes using white text in resumes to trick Applicant Tracking
-                                Systems (ATSs) into tricking the system not to filter your resume despite the qualifications not being fulfilled. 
+                                Systems (ATSs) into tricking the system not to filter your resume despite the qualifications not being fulfilled. For example, if a job listing states that one must
+                                know AWS in order to apply, one can circumvent the automated filtering process by writing AWS in small white text, and have the resume looked at by a human. 
+                                This maximizes the chances of a human reviewing the resume and proceeding to the next step, where as an honest applicant without AWS experience 
+                                would either apply and immediately get filtered out or would not apply altogether.<br><br>
 
                                 This post aims to illustrate where the motivation to violate academic integrity stems from, create a framework that can quantify the mechanism of cheating, 
-                                and what we can do to mitigate future violations.
+                                and what we can do to mitigate future violations.<br><br>
+
+                                Note: This post will utilize concepts in game theory to analyze cheating incentives. An extensive knowledge in game theory is not required and I will try to
+                                explain the relevant principles as we build up the model. I have included external links when mentioning important concepts in the event you would like to 
+                                read more about them.
 
                             </div>
-                            <br>
 
-                            <div class="lead" id="gt" text-align="left">
+                            <h2 id = "gt">Game Theory</h2><br>
+
+                            <div class="lead" text-align="left" style="font-size:18px">
                             
                                 Using Game Theory, we can create a scenario where a student needs to make a decision about whether to cheat or not and
                                 make this decision based on how beneficial it is for said student. To create this framework we will use the following assumptions.
-                                <br>
                                 <br>
                                 <br>
 
@@ -171,8 +180,8 @@
                                     <li>For now, cheaters will not get caught in this exercise. <b>We will relax this assumption later.</b></li>
                                 </ol>
 
-                                Utilizing the outlined assumptions, we can create a payout matrix as shown below that demonstrates what happens when both parties - "Random Student" and "All Other Students" - 
-                                make their decisions. The payouts can be interpreted as (<i>payout for Random Student</i> , <i>payout for All Other Students</i>)
+                                Assume that the reward gained from cheating is denoted \( r \). Then, utilizing the outlined assumptions, we can create a payout matrix as shown below that demonstrates what happens when both parties - "Random Student" and "All Other Students" - 
+                                make their decisions - "Cheat" or "Don't Cheat". The values in the payout matrix can be interpreted as (<i>change in payout for Random Student</i> , <i>change in payout for All Other Students</i>). <br><br>
 
                                 <table class="wikitable" style="border: 1; padding: 2; border-spacing: 2; text-align:center;">
                                     <caption>
@@ -183,7 +192,7 @@
                                     <td colspan="2" bgcolor="#fcf3d3"><center>All Other Students</center>
                                     </td></tr>
                                     <tr bgcolor="#ebe294">
-                                    <td><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cheat</center></td>
+                                    <td><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cheat</center></td>
                                     <td><center>Don't Cheat</center></td>
                                     </tr>
                                     <tr>
@@ -195,7 +204,7 @@
                                     <td><center>(+r,0)</center>
                                     </td></tr>
                                     <tr>
-                                    <td bgcolor="#ebe294"><center>Don't Cheat</center>
+                                    <td bgcolor="#ebe294"><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Don't Cheat</center>
                                     </td>
                                     <td><center>(0,+r)</center></td>
                                     <td><center>(0,0)</center>
@@ -208,15 +217,15 @@
                                 Now that we understand how the table is created, we need to relax the assumption of cheaters never getting caught and incorporate that into our model. 
                                 It is important to acknowledge that many students cheat and get away with it. This means that if all cheaters are treated equally, they each have the same
                                 random chance of getting caught (though this ignores the intelligence of those executing the cheat). Let's denote the probability of getting caught by \(p\).
-                                So, for a random cheater, they have a \((1 - p)\) of getting away with it and getting a reward of \( r \). However, what reward needs to be given in the event 
+                                So, for a random cheater, they have a \((1 - p)\) probability of getting away with it and getting a reward of \( r \). However, what reward (penalty really) needs to be given in the event 
                                 the cheater gets caught? For now, we will denote it by \( t \), but we should note that cost of getting caught is going to be significantly higher than the 
-                                reward of a few extra points on an assessment. Many universities have strict academic integrity policies (INLCLUDE LINK) and getting caught will nearly always result
-                                in more pain than the reward is ever worth. 
+                                reward of a few extra points on an assessment. Many universities have strict academic integrity policies (for example, here's <a href="https://lsa.umich.edu/lsa/academics/academic-integrity.html">mine</a>) and getting caught will nearly always result
+                                in more pain than the reward is ever worth. <br><br>
 
-                                If we update the payout matrix to reflect these developments, it looks something like this.
+                                If we update the payout matrix to reflect these developments, it looks something like this.<br><br>
 
                                 
-                                <table class="wikitable" style="border: 1; padding: 2; border-spacing: 2; text-align:center;">
+                                <table class="wikitable" style="border: 1; padding: 2; border-spacing: 2; text-align:center">
                                     <caption>
                                     </caption>
                                     <tbody><tr>
@@ -233,54 +242,55 @@
                                     </td>
                                     <td bgcolor="#ebe294"><center>Cheat</center>
                                     </td>
-                                    <td><center>(\( 0*(1-p) + t*p \), \( 0*(1-p) + t*p \)</center></td>
-                                    <td><center>(\( r*(1-p) + t*p \),0)</center>
+                                    <td><center>\(( 0*(1-p) + t*p \), \( 0*(1-p) + t*p ) \)</center></td>
+                                    <td><center>\(( r*(1-p) + t*p , 0)\)</center>
                                     </td></tr>
                                     <tr>
-                                    <td bgcolor="#ebe294"><center>Don't Cheat</center>
+                                    <td bgcolor="#ebe294"><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Don't &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cheat</center>
                                     </td>
-                                    <td><center>(0,\( r*(1-p) + t*p \))</center></td>
-                                    <td><center>(0,0)</center>
+                                    <td><center>\((0,  r*(1-p) + t*p )\)</center></td>
+                                    <td><center>\( (0, 0) \)</center>
                                     </td></tr>
                                     
                                     </tbody>
                                 </table>
                             </div>
-                            <br>
 
-                            <div class="lead" id="solutions" text-align="left">
+                            <h2 id = "solutions">Solutions</h2>
+
+                            <div class="lead" text-align="left" style="font-size:18px">
                                 So, if students are clearly incentivized to cheat, how do we prevent it? Personally, I have tunnel vision on a singular solution; however, to make this seem less
                                 biased, I have included a few solutions in increasing order of effectivenes (obviously from a subjective point of view).
-                                <br>
+                                <br><br>
 
-                                <b>1. Increase Vigilance for Cheating Detection (Rating: <span style="color: red">2</span>/10)</b><br>
+                                <b>1. Increase Vigilance for Cheating Detection (Rating: <span style="color: red">2</span>/10)</b><br><br>
 
                                 This solution can also be thought of increasing \( p \).
-                                <br>
+                                <br><br>
 
-                                <b>2. Create a Cheater's Adjustment (Rating: <span style="color: red">3</span>/10)</b><br>
+                                <b>2. Create a Cheater's Adjustment (Rating: <span style="color: red">3</span>/10)</b><br><br>
 
                                 This idea has a varying effectiveness level that is dependent on \( p \).
-                                <br>
+                                <br><br>
 
-                                <b>3. Create Cheating-Robust Environments (Rating: <span style="color: #FFAE42">5</span>/10)</b><br>
+                                <b>3. Create Cheating-Robust Environments (Rating: <span style="color: #FFAE42">5</span>/10)</b><br><br>
 
                                 This one is slightly different from the first solution in that the preventative measures are taken before an assessment takes place and, therefore,
                                 before any cheating can take place. This sidesteps the false accusations issue and makes the barrier of entry to cheating signficiantly higher.
                                 While this could be effective with smaller class sizes, this setup could take a tremendous amount of effort to execute and I imagine the difficulty
-                                of setup increases somewhat exponentially with class size. 
+                                of setup increases somewhat exponentially with class size. <br><br>
 
                                 Makes a universal policy more difficult to follow.
-                                <br>
+                                <br><br>
 
-                                <b>4. Do Away with Time Sensitive Assessments (Rating: <span style="color: #32CD32">8</span>/10)</b><br>
+                                <b>4. Do Away with Time Sensitive Assessments (Rating: <span style="color: #32CD32">8</span>/10)</b><br><br>
 
-                                Based on the ratings (that are obviously super detailed) I like this solution the best. 
+                                Based on the ratings (that are obviously super detailed) I like this solution the best. <br><br>
 
                                 The obvious drawback behind this solution is that the assessments themselves become more time consuming for both the students to complete and for the 
                                 instruction staff to grade. This can definitely be strenuous for large class sizes that would otherwise have a facile grading process of grading only a handful of
                                 relatively short assessments. However, 
-                                <br>
+                                <br><br>
                             </div>
 
                             <br>
