@@ -17,6 +17,7 @@
     ================================================== -->
     <link rel="stylesheet" href="../css/vendor.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="supplement.css">
 
     <!-- script
     ================================================== -->
@@ -162,7 +163,7 @@
 
                             </div>
 
-                            <h2 id = "gt">Game Theory</h2><br>
+                        <h2 id = "gt">Game Theory</h2><br>
 
                             <div class="lead" text-align="left" style="font-size:18px">
                             
@@ -254,9 +255,109 @@
                                     
                                     </tbody>
                                 </table>
+                           
+
+                                With this game now fully established, we can start understanding the different payoffs associated with each \( (p, r, t) \) triplet.
+                                You can use the sliders provided to play around with the various combinations and see how they influence the outcome. <br>
+
+
+                                <table class="wikitable" style="border: 1; padding: 2; border-spacing: 2; text-align:center">
+                                    <caption>
+                                    </caption>
+                                    <tbody><tr>
+                                    <td colspan="2" rowspan="2" bgcolor="#c8d1b1"><big><b class="center">Student Cheating</b></big>
+                                    </td>
+                                    <td colspan="2" bgcolor="#fcf3d3"><center>All Other Students</center>
+                                    </td></tr>
+                                    <tr bgcolor="#ebe294">
+                                    <td><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cheat</center></td>
+                                    <td><center>Don't Cheat</center></td>
+                                    </tr>
+                                    <tr>
+                                    <td rowspan="2" bgcolor="#fcf3d3"><center>&nbsp;&nbsp;&nbsp;&nbsp;Random Student</center>
+                                    </td>
+                                    <td bgcolor="#ebe294"><center>Cheat</center>
+                                    </td>
+                                    <!-- change it back to t*p at the end -->
+                                    <td><center><p id="11"></p></center></td>
+                                    <td><center><p id="12"></p></center>
+                                    </td></tr>
+                                    <tr>
+                                    <td bgcolor="#ebe294"><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Don't &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cheat</center>
+                                    </td>
+                                    <td><center><p id="21"></p></center></td>
+                                    <td><center><p id="22"></p></center>
+                                    </td></tr>
+                                    
+                                    </tbody>
+                                </table>
+
+                                <div class="slidecontainer">
+                                    <center><p> \( p \)</p></center>
+                                    <input type="range" min="0" max="1" value="0.5" step="0.01" class="slider" id="p-slider">
+                                </div>
+                                <div class="slidecontainer">
+                                    <center><p> \( r \)</p></center>
+                                    <input type="range" min="1" max="100" value="50" class="slider" id="r-slider">
+                                </div>
+                                <div class="slidecontainer">
+                                    <center><p> \( t \)</p></center>
+                                    <input type="range" min="-1000" max="0" value="50" class="slider" id="t-slider">
+                                </div>
+                                <p>\( p \): <span id="p-demo"></span></p>
+                                <p>\( r \): <span id="r-demo"></span></p>
+                                <p>\( t \): <span id="t-demo"></span></p>
+                                
+
+                                <script>
+                                    var p_slider = document.getElementById("p-slider");
+                                    var p_output = document.getElementById("p-demo");
+                                    p_output.innerHTML = p_slider.value; // Display the default slider value
+
+                                    // Update the current slider value (each time you drag the slider handle)
+                                    p_slider.oninput = function() {
+                                        p_output.innerHTML = this.value;
+                                        document.getElementById('11').innerHTML = "" + (Math.round(100 * (0 * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML))/100).toFixed(2) + ", " + (Math.round(100* (0 * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML))/100).toFixed(2);
+                                        document.getElementById('12').innerHTML = "" + (Math.round(100 * ((r_output.innerHTML * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML)))/100).toFixed(2) + ", " + 0;
+                                        document.getElementById('21').innerHTML = "" + 0 + ", " + (parseFloat(Math.round(100 * (parseFloat(r_output.innerHTML * (1-p_output.innerHTML)) + parseFloat(t_output.innerHTML * p_output.innerHTML))))/100).toFixed(2);
+                                        document.getElementById('22').innerHTML = "" + 0 + ", " + 0;
+                                    }
+                                </script>
+
+                                <script>
+                                    var r_slider = document.getElementById("r-slider");
+                                    var r_output = document.getElementById("r-demo");
+                                    r_output.innerHTML = r_slider.value; // Display the default slider value
+
+                                    // Update the current slider value (each time you drag the slider handle)
+                                    r_slider.oninput = function() {
+                                        r_output.innerHTML = this.value;
+                                        document.getElementById('11').innerHTML = "" + (Math.round(100 * (0 * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML))/100).toFixed(2) + ", " + (Math.round(100* (0 * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML))/100).toFixed(2);
+                                        document.getElementById('12').innerHTML = "" + (Math.round(100 * ((r_output.innerHTML * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML)))/100).toFixed(2) + ", " + 0;
+                                        document.getElementById('21').innerHTML = "" + 0 + ", " + (parseFloat(Math.round(100 * (parseFloat(r_output.innerHTML * (1-p_output.innerHTML)) + parseFloat(t_output.innerHTML * p_output.innerHTML))))/100).toFixed(2);
+                                        document.getElementById('22').innerHTML = "" + 0 + ", " + 0;
+                                    }
+                                </script>
+
+                                <script>
+                                    var t_slider = document.getElementById("t-slider");
+                                    var t_output = document.getElementById("t-demo");
+                                    t_output.innerHTML = t_slider.value; // Display the default slider value
+
+                                    // Update the current slider value (each time you drag the slider handle)
+                                    t_slider.oninput = function() {
+                                        t_output.innerHTML = this.value;
+                                        document.getElementById('11').innerHTML = "" + (Math.round(100 * (0 * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML))/100).toFixed(2) + ", " + (Math.round(100* (0 * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML))/100).toFixed(2);
+                                        document.getElementById('12').innerHTML = "" + (Math.round(100 * ((r_output.innerHTML * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML)))/100).toFixed(2) + ", " + 0;
+                                        document.getElementById('21').innerHTML = "" + 0 + ", " + (parseFloat(Math.round(100 * (parseFloat(r_output.innerHTML * (1-p_output.innerHTML)) + parseFloat(t_output.innerHTML * p_output.innerHTML))))/100).toFixed(2);
+                                        document.getElementById('22').innerHTML = "" + 0 + ", " + 0;
+                                    }
+                                </script>
+
+                                </div>
                             </div>
 
-                            <h2 id = "solutions">Solutions</h2>
+                        <h2 id = "solutions">Solutions</h2>
 
                             <div class="lead" text-align="left" style="font-size:18px">
                                 So, if students are clearly incentivized to cheat, how do we prevent it? Personally, I have tunnel vision on a singular solution; however, to make this seem less
