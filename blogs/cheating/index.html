@@ -223,6 +223,9 @@
                                 reward of a few extra points on an assessment. Many universities have strict academic integrity policies (for example, here's <a href="https://lsa.umich.edu/lsa/academics/academic-integrity.html">mine</a>) and getting caught will nearly always result
                                 in more pain than the reward is ever worth. <br><br>
 
+                                Lastly, we need to address that for every additional random student that decides to cheat, the probability of getting caught increases. We will denote the increase in 
+                                probability of getting caught by \( \delta \). <br><br>
+
                                 If we update the payout matrix to reflect these developments, it looks something like this.<br><br>
 
                                 
@@ -243,7 +246,7 @@
                                     </td>
                                     <td bgcolor="#ebe294"><center>Cheat</center>
                                     </td>
-                                    <td><center>\(( 0*(1-p) + t*p \), \( 0*(1-p) + t*p ) \)</center></td>
+                                    <td><center>\(( r*(1-(p + \delta)) + t*(p + \delta) \), \( r*(1-(p + \delta)) + t*(p + \delta) ) \)</center></td>
                                     <td><center>\(( r*(1-p) + t*p , 0)\)</center>
                                     </td></tr>
                                     <tr>
@@ -257,8 +260,9 @@
                                 </table>
                            
 
-                                With this game now fully established, we can start understanding the different payoffs associated with each \( (p, r, t) \) triplet.
-                                You can use the sliders provided to play around with the various combinations and see how they influence the outcome. <br>
+                                With this game now fully established, we can start understanding the different payoffs associated with each \( (\delta, p, r, t) \) tuple.
+                                You can use the sliders provided to play around with the various combinations and see how they influence the outcome. Note that \( p + \delta \)
+                                is constrained to take on a maximum value of 1, since a probability cannot exceed the value of 1.<br>
 
 
                                 <table class="wikitable" style="border: 1; padding: 2; border-spacing: 2; text-align:center">
@@ -291,7 +295,11 @@
                                     
                                     </tbody>
                                 </table>
-
+                                
+                                <div class="slidecontainer">
+                                    <center><p> \( \delta \)</p></center>
+                                    <input type="range" min="0" max="1" value="0.05" step="0.01" class="slider" id="d-slider">
+                                </div>
                                 <div class="slidecontainer">
                                     <center><p> \( p \)</p></center>
                                     <input type="range" min="0" max="1" value="0.5" step="0.01" class="slider" id="p-slider">
@@ -304,10 +312,27 @@
                                     <center><p> \( t \)</p></center>
                                     <input type="range" min="-1000" max="0" value="50" class="slider" id="t-slider">
                                 </div>
+                                <p>\( \delta \): <span id="d-demo"></span></p>
                                 <p>\( p \): <span id="p-demo"></span></p>
                                 <p>\( r \): <span id="r-demo"></span></p>
                                 <p>\( t \): <span id="t-demo"></span></p>
                                 
+
+                                <script>
+                                    var d_slider = document.getElementById("d-slider");
+                                    var d_output = document.getElementById("d-demo");
+                                    d_output.innerHTML = d_slider.value; // Display the default slider value
+
+                                    // Update the current slider value (each time you drag the slider handle)
+                                    d_slider.oninput = function() {
+                                        d_output.innerHTML = this.value;
+                                        var p_delta = Math.min(parseFloat(p_output.innerHTML) + parseFloat(d_output.innerHTML), 1)
+                                        document.getElementById('11').innerHTML = "" + (Math.round(100 * (r_output.innerHTML * (1-p_delta) + t_output.innerHTML * p_delta))/100).toFixed(2) + ", " + (Math.round(100* (r_output.innerHTML * (1-p_delta) + t_output.innerHTML * p_delta))/100).toFixed(2);
+                                        document.getElementById('12').innerHTML = "" + (Math.round(100 * ((r_output.innerHTML * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML)))/100).toFixed(2) + ", " + 0;
+                                        document.getElementById('21').innerHTML = "" + 0 + ", " + (parseFloat(Math.round(100 * (parseFloat(r_output.innerHTML * (1-p_output.innerHTML)) + parseFloat(t_output.innerHTML * p_output.innerHTML))))/100).toFixed(2);
+                                        document.getElementById('22').innerHTML = "" + 0 + ", " + 0;
+                                    }
+                                </script>
 
                                 <script>
                                     var p_slider = document.getElementById("p-slider");
@@ -317,7 +342,8 @@
                                     // Update the current slider value (each time you drag the slider handle)
                                     p_slider.oninput = function() {
                                         p_output.innerHTML = this.value;
-                                        document.getElementById('11').innerHTML = "" + (Math.round(100 * (0 * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML))/100).toFixed(2) + ", " + (Math.round(100* (0 * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML))/100).toFixed(2);
+                                        var p_delta = Math.min(parseFloat(p_output.innerHTML) + parseFloat(d_output.innerHTML), 1)
+                                        document.getElementById('11').innerHTML = "" + (Math.round(100 * (r_output.innerHTML * (1-p_delta) + t_output.innerHTML * p_delta))/100).toFixed(2) + ", " + (Math.round(100* (r_output.innerHTML * (1-p_delta) + t_output.innerHTML * p_delta))/100).toFixed(2);
                                         document.getElementById('12').innerHTML = "" + (Math.round(100 * ((r_output.innerHTML * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML)))/100).toFixed(2) + ", " + 0;
                                         document.getElementById('21').innerHTML = "" + 0 + ", " + (parseFloat(Math.round(100 * (parseFloat(r_output.innerHTML * (1-p_output.innerHTML)) + parseFloat(t_output.innerHTML * p_output.innerHTML))))/100).toFixed(2);
                                         document.getElementById('22').innerHTML = "" + 0 + ", " + 0;
@@ -332,7 +358,8 @@
                                     // Update the current slider value (each time you drag the slider handle)
                                     r_slider.oninput = function() {
                                         r_output.innerHTML = this.value;
-                                        document.getElementById('11').innerHTML = "" + (Math.round(100 * (0 * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML))/100).toFixed(2) + ", " + (Math.round(100* (0 * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML))/100).toFixed(2);
+                                        var p_delta = Math.min(parseFloat(p_output.innerHTML) + parseFloat(d_output.innerHTML), 1)
+                                        document.getElementById('11').innerHTML = "" + (Math.round(100 * (r_output.innerHTML * (1-p_delta) + t_output.innerHTML * p_delta))/100).toFixed(2) + ", " + (Math.round(100* (r_output.innerHTML * (1-p_delta) + t_output.innerHTML * p_delta))/100).toFixed(2);
                                         document.getElementById('12').innerHTML = "" + (Math.round(100 * ((r_output.innerHTML * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML)))/100).toFixed(2) + ", " + 0;
                                         document.getElementById('21').innerHTML = "" + 0 + ", " + (parseFloat(Math.round(100 * (parseFloat(r_output.innerHTML * (1-p_output.innerHTML)) + parseFloat(t_output.innerHTML * p_output.innerHTML))))/100).toFixed(2);
                                         document.getElementById('22').innerHTML = "" + 0 + ", " + 0;
@@ -347,14 +374,24 @@
                                     // Update the current slider value (each time you drag the slider handle)
                                     t_slider.oninput = function() {
                                         t_output.innerHTML = this.value;
-                                        document.getElementById('11').innerHTML = "" + (Math.round(100 * (0 * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML))/100).toFixed(2) + ", " + (Math.round(100* (0 * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML))/100).toFixed(2);
+                                        var p_delta = Math.min(parseFloat(p_output.innerHTML) + parseFloat(d_output.innerHTML), 1)
+                                        document.getElementById('11').innerHTML = "" + (Math.round(100 * (r_output.innerHTML * (1-p_delta) + t_output.innerHTML * p_delta))/100).toFixed(2) + ", " + (Math.round(100* (r_output.innerHTML * (1-p_delta) + t_output.innerHTML * p_delta))/100).toFixed(2);
                                         document.getElementById('12').innerHTML = "" + (Math.round(100 * ((r_output.innerHTML * (1-p_output.innerHTML) + t_output.innerHTML * p_output.innerHTML)))/100).toFixed(2) + ", " + 0;
                                         document.getElementById('21').innerHTML = "" + 0 + ", " + (parseFloat(Math.round(100 * (parseFloat(r_output.innerHTML * (1-p_output.innerHTML)) + parseFloat(t_output.innerHTML * p_output.innerHTML))))/100).toFixed(2);
                                         document.getElementById('22').innerHTML = "" + 0 + ", " + 0;
                                     }
                                 </script>
 
-                                </div>
+                                A positive outcome means that an entity gained points by cheating whereas a negative outcome means an entity lost points by cheating. An outcome of 0 simply
+                                means the party did not cheat and therefore, does not receive a penalty or reward.
+
+                                The question remains what values each of these variables should take on. Several sources indicate that the probability of students getting caught is small at only
+                                around 5%<sup><a href="https://oedb.org/ilibrarian/8-astonishing-stats-on-academic-cheating/#:~:text=In%20his%20study%20of%201%2C800,cheaters%20don't%20get%20caught">1</a></sup>    <sup><a href="https://proctoredu.com/blog/tpost/5dk67zrns1-academic-dishonesty-statistics">2</a></sup>. 
+                                Additionally, we can identify from <a href="https://unicheck.com/blog/academic-cheating-statistics"> this Unicheck report </a> that 61% of 71,300 sampled undergraduates
+                                believe it is ethical to cheat on some sort of academic assessment and that a whopping 95% of them had cheated in the past. By plugging in \( p = 0.5 \) into our sliders above,
+                                even if a student receives no credit for an assessment (\( t = -100 \)) if caught, even at an egregious \( \delta = 0.05 \), the reward needs to only be 12 points for a student
+                                to be incentivized to cheat. If \( \delta \) drops to 0.01, then the reward only needs to be 7 to make cheating a dominated strategy.
+
                             </div>
 
                         <h2 id = "solutions">Solutions</h2>
@@ -364,17 +401,29 @@
                                 biased, I have included a few solutions in increasing order of effectivenes (obviously from a subjective point of view).
                                 <br><br>
 
-                                <b>1. Increase Vigilance for Cheating Detection (Rating: <span style="color: red">2</span>/10)</b><br><br>
+                                <b>1. Make Punishments More Severe (Rating: <span style="color: red">2</span>/10) </b><br><br>
 
-                                This solution can also be thought of increasing \( p \).
+                                One suggestion posited by the paper 
+                                <a href=https://quod.lib.umich.edu/p/plag/5240451.0001.010/--how-college-students-cheat-on-in-class-examinations?rgn=main;view=fulltext"> How College Students Cheat On In-Class Examinations: Creativity, Strain, and Techniques of Innovation </a>
+                                is that a threat of <i>severe</i> punishment is effective for cheating prevention. This is equivalent to driving \( t \) lower. While it's obvious from the game theory perspective that increasing the punishment lowers the reward of cheating, more stringent 
+                                punishments will likely ignore if this is a student's first offense. The first offense is not even solely restricted to cheating either; for some students, violating academic integrity might be their first real experience with making a consequential mistake.
+                                Increasing punishments may certainly prevent cheating, but may also disincentivize a correction or recovery process for students who have been caught. After all, while we want to protect academic integrity, protecting the future of admitted students is also a 
+                                responsibility of academic institutions. Therefore, it is possible that there exists a better solution that has fewer negative side effects.
                                 <br><br>
 
-                                <b>2. Create a Cheater's Adjustment (Rating: <span style="color: red">3</span>/10)</b><br><br>
+                                <b>2. Increase Vigilance for Cheating Detection (Rating: <span style="color: red">2</span>/10)</b><br><br>
+
+                                Though this solution seems remarkably similar to Solution 1, it only increases the chances of getting caught, but not the punishment for it.
+                                This would be the equivalent of increasing \( p \) in our model.
+                                
+                                <br><br>
+
+                                <b>3. Create a Cheater's Adjustment (Rating: <span style="color: red">3</span>/10)</b><br><br>
 
                                 This idea has a varying effectiveness level that is dependent on \( p \).
                                 <br><br>
 
-                                <b>3. Create Cheating-Robust Environments (Rating: <span style="color: #FFAE42">5</span>/10)</b><br><br>
+                                <b>4. Create Cheating-Robust Environments (Rating: <span style="color: #FFAE42">5</span>/10)</b><br><br>
 
                                 This one is slightly different from the first solution in that the preventative measures are taken before an assessment takes place and, therefore,
                                 before any cheating can take place. This sidesteps the false accusations issue and makes the barrier of entry to cheating signficiantly higher.
@@ -384,7 +433,7 @@
                                 Makes a universal policy more difficult to follow.
                                 <br><br>
 
-                                <b>4. Do Away with Time Sensitive Assessments (Rating: <span style="color: #32CD32">8</span>/10)</b><br><br>
+                                <b>5. Do Away with Time Sensitive Assessments (Rating: <span style="color: #32CD32">8</span>/10)</b><br><br>
 
                                 Based on the ratings (that are obviously super detailed) I like this solution the best. <br><br>
 
