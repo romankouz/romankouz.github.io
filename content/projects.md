@@ -12,7 +12,7 @@ sections:
   - block: collection
     content:
       title: Selected Projects
-      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      text: I enjoy making things people use for efficiency, convenience, and fun! Check out a tailored selection of my favorite projects which range from video game tracking to building AI tech support bots to data interpolation UIs to Turing Test games!
       filters:
         folders:
           - project

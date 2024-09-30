@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/resume.pdf
+        url: uploads/RomansResume.pdf
     design:
       css_class: dark
       background:
@@ -32,30 +32,24 @@ sections:
           parallax: false
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: '📚 About Me'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        Hi there! I'm Roman. I love all things data, statistics, artificial intelligence, and software engineering. 
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        I am a researcher and developer that thrives on making utilitarian products for niche demographics. 
         
-        Please reach out to collaborate 😃
+        As a researcher, my work is relevant to computational biologists, bioinformaticians, biostatisticians, genomics researchers, and anyone with an interest in spatial groupings and spatial mathematics.
+
+        As a developer, my work has helped automate IT ticket assignments, evaluate worker optimizations, answer tech setup questions with AI in 26 languages, and eliminate hallucinations in LLM by implementing novel agentic workflows.
+
+        
     design:
       columns: '1'
   - block: collection
-    id: papers
+    id: publications
     content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publication
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
-  - block: collection
-    content:
-      title: Recent Publications
+      title: Publications
       text: ""
       filters:
         folders:
@@ -66,13 +60,13 @@ sections:
   - block: collection
     id: talks
     content:
-      title: Recent & Upcoming Talks
+      title: Talks
       filters:
         folders:
           - event
     design:
       view: article-grid
-      columns: 1
+      columns: 2
   - block: collection
     id: news
     content:
@@ -122,4 +116,6 @@ sections:
         # Card background color (CSS class)
         css_class: "bg-primary-700"
         css_style: ""
+  # - block: Volunteering
+  #   id: volunteering
 ---
