@@ -31,7 +31,7 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'roko@umich.edu'
+    url: 'mailto:roko@umich.edu'
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/romankouz
@@ -47,7 +47,7 @@ interests:
   - Spatial Inference
 
 education:
-  - area: PhD in Statistics
+  - area: PhD Candidate in Statistics
     institution: University of Michigan
     date_start: 2021-08-15
     date_end: 2025-05-31
@@ -80,28 +80,40 @@ education:
     summary: |
       GPA: 3.92/4.0
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
-    company_logo: ''
-    date_start: 2021-01-01
+  - position: Probabilistic Machine Learning Researcher / PhD Candidate
+    company_name: University of Michigan
+    company_url: 'https://lsa.umich.edu/stats'
+    company_logo: custom/UM
+    date_start: 2019-08-31
     date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Developing innovative statistical methods for spatial transcriptomics data by combining variational inference and
+      graph neural networks.
+      - Engineering scalable probabilistic models to capture intricate patterns in high-dimensional spatial transcriptomics
+      data, expanding our understanding of spatial gene expression and cell (group) interactions.
+      - Developed hierarchical Bayesian models to incorporate customized prior spatial knowledge.
+  - position: Data Science Lead / AI Engineer
+    company_name: Skillet Labs
+    company_url: ''
+    company_logo: brands/UM
+    date_start: 2023-11-01
+    date_end: 2024-06-19
+    summary: |
+      - Led the generation, fine-tuning, and statistical evaluation of large language models used by management service
+      providers (MSPs).
+      - Implemented an AI system that optimized MSP talent deployment, improving ticket resolution times.
+      - Developed and deployed a multi-agentic workflow that assigned specific sub-tasks to specialized agents, increasingquery resolution efficiency and decreasing hallucinations.
+      - Led a team of four senior engineers and collaborated with two PhD researchers in economics and psychometrics to ship 
+  - position: Data Science Intern
+    company_name: Progressive
+    company_url: 'https://www.progressive.com/'
+    company_logo: 'brands/UM'
+    date_start: 2019-05-01
+    date_end: 2019-08-31
+    summary: |
+      - Performed interactive network visualization, analysis, and inference for employment transitions in Claims Control.
+      - The analysis of these models helps Progressive’s Claims Control department properly allocate new labor, decisions
+      that cost the department about $3-4 million annually.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`

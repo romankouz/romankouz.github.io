@@ -12,13 +12,12 @@ address:
   postcode: '94305'
   country: United States
 
-summary: An example talk using Hugo Blox Builder's Markdown slides feature.
-abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam.'
+summary: A poster session for our paper on deepST.
+abstract: Single-cell spatial transcriptomics measures gene expression for individual cells and pairs these measurements with the positions of cells within a tissue sample.  With spatial transcriptomic data, how neighboring cells interact can be investigated by posing a pair of prediction problems.  The first problem is to predict a gene's expression in each cell using the attributes of the cell.  The second problem is to predict the same responses using the attributes of the cell and its neighbors.  Genes may then be ranked according to difference in predictive performance - genes for which the predictions from the second problem are more accurate than the first may carry important spatial correlates.  Highly ranked genes may warrant further investigation through follow-up experiments. Mixture of Experts for Spatial Signaling genes Identification (MESSI) is one method that adopts this general approach.  However, MESSI is limited to using fixed-dimensional encoding of the attributes of neighboring cells as predictors. MESSI encodes neighboring information as the sum of gene expressions over all neighboring cells, with neighborhood structure determined by Delaunay triangulation.  These encodings ignore the number of neighbors and the interactions among them.  We propose instead to encode neighboring information as a graph, thus avoiding the limitations of fixed-dimensional encodings.   
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2030-06-01T13:00:00Z'
-date_end: '2030-06-01T15:00:00Z'
+date: '2022-11-22T13:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
@@ -36,15 +35,7 @@ image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
   focal_point: Right
 
-#links:
-#  - icon: twitter
-#    icon_pack: fab
-#    name: Follow
-#    url: https://twitter.com/georgecushen
-url_code: 'https://github.com'
-url_pdf: ''
-url_slides: 'https://slideshare.net'
-url_video: 'https://youtube.com'
+url_pdf: uploads/MLCB_Submission.pdf
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
@@ -61,15 +52,3 @@ slides: ""
 projects:
   - example
 ---
-
-{{% callout note %}}
-Click on the **Slides** button above to view the built-in slides feature.
-{{% /callout %}}
-
-Slides can be added in a few ways:
-
-- **Create** slides using Hugo Blox Builder's [_Slides_](https://docs.hugoblox.com/reference/content-types/) feature and link using `slides` parameter in the front matter of the talk file
-- **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
-- **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://docs.hugoblox.com/reference/markdown/).
-
-Further event details, including [page elements](https://docs.hugoblox.com/reference/markdown/) such as image galleries, can be added to the body of this page.

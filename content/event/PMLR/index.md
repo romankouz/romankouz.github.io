@@ -12,7 +12,7 @@ abstract: The complete collection of slides/notes for analyzing developments in 
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2030-06-01T13:00:00Z'
+date: '2023-10-18T13:00:00Z'
 # date_end: '2030-06-01T15:00:00Z'
 all_day: false
 
