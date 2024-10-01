@@ -1,13 +1,11 @@
 ---
-title: scikit-learn
-date: 2023-10-26
-external_link: https://github.com/scikit-learn/scikit-learn
+title: R-AI-NDO Helpbot
+date: 2024-09-15
+external_link: https://github.com/roromaniac/AIlios
 tags:
-  - Hugo
-  - Wowchemy
-  - Markdown
+  - AI, Fine-Tuning, Cybrancee
 ---
 
-scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+RAINDO is an AI that can assist with technical setup of a randomized video game. Finetuned and attentive to responses from volunteer help professionals, this bot can accurately assist with any questions about setup, logistics, FAQs, and common occurrences. The (discord) bot is also compliant with server rules, flags inappropriate queries, and can respond to questions in 55 supported languages. Increased accessibility for non-English speakers was the main motivation for this project.
 
 <!--more-->

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reflex, Python, AI | Named After Numeral</title>
+    <link>http://localhost:1313/tags/reflex-python-ai/</link>
+      <atom:link href="http://localhost:1313/tags/reflex-python-ai/index.xml" rel="self" type="application/rss+xml" />
+    <description>Reflex, Python, AI</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu3408596154493010571.png</url>
+      <title>Reflex, Python, AI</title>
+      <link>http://localhost:1313/tags/reflex-python-ai/</link>
+    </image>
+    
+    <item>
+      <title>Half Truth</title>
+      <link>http://localhost:1313/project/half_truth/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/half_truth/</guid>
+      <description>&lt;p&gt;Inspired by the Ken Jennings board game Half Truth, I created an online version where leveraging API calls to state of the art AI models to generate true and false statements about any subject. It comes included with color coded UI responses, a scoreboard, and custom game settings. It serves at the ultimate human Turing test and is optimally played when the categories are obscure and generally unknown to all players.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

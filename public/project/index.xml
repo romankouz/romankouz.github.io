@@ -5,91 +5,53 @@
     <link>http://localhost:1313/project/</link>
       <atom:link href="http://localhost:1313/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <url>http://localhost:1313/media/icon_hu3408596154493010571.png</url>
       <title>Projects</title>
       <link>http://localhost:1313/project/</link>
     </image>
     
     <item>
+      <title>R-AI-NDO Helpbot</title>
+      <link>http://localhost:1313/project/raindo_setup/</link>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/raindo_setup/</guid>
+      <description>&lt;p&gt;RAINDO is an AI that can assist with technical setup of a randomized video game. Finetuned and attentive to responses from volunteer help professionals, this bot can accurately assist with any questions about setup, logistics, FAQs, and common occurrences. The (discord) bot is also compliant with server rules, flags inappropriate queries, and can respond to questions in 55 supported languages. Increased accessibility for non-English speakers was the main motivation for this project.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python GPT Crawler</title>
+      <link>http://localhost:1313/project/gpt_crawler_py/</link>
+      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/gpt_crawler_py/</guid>
+      <description>&lt;p&gt;A GPT knowledge file web crawler in base python. Inspired by Builder IO&amp;rsquo;s 
+ and the 
+ by A-baoYang, I decided to create my own version which is a bit lighter on prerequisites. Despite both of these being very accessible, installing any combination of node, chromium, and playwright can be a pain if your hosting provider does not support installing these dependencies. Therefore, I rewrote the project using only Python&amp;rsquo;s os, requests, and beautifulsoup4 libraries.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Grid Tracker</title>
       <link>http://localhost:1313/project/tracker/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 14 Apr 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project/tracker/</guid>
-      <description>&lt;p&gt;The Grid Tracker is an upgrade to the supporing window of the Kingdom Hearts 2 Randomizer tracker.&lt;/p&gt;</description>
+      <description>&lt;p&gt;The Grid Tracker is an upgrade to the supporting window of the Kingdom Hearts 2 Randomizer tracker. Utilizing a game inventory tracking system, the grid updates without user input. The grid comes equipped with UI features such as right-click markdown, custom win-conditions, customizable check menu, color and icon customization, and more.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Pandas</title>
-      <link>http://localhost:1313/project/pandas/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/pandas/</guid>
-      <description>&lt;p&gt;Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>PyTorch</title>
-      <link>http://localhost:1313/project/pytorch/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/pytorch/</guid>
-      <description>&lt;p&gt;PyTorch is a Python package that provides tensor computation (like NumPy) with strong GPU acceleration.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>scikit-learn</title>
-      <link>http://localhost:1313/project/bernoulli_bandits/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/bernoulli_bandits/</guid>
-      <description>&lt;p&gt;scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>scikit-learn</title>
-      <link>http://localhost:1313/project/gpt_crawler_py/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/gpt_crawler_py/</guid>
-      <description>&lt;p&gt;scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>scikit-learn</title>
+      <title>Half Truth</title>
       <link>http://localhost:1313/project/half_truth/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project/half_truth/</guid>
-      <description>&lt;p&gt;scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Inspired by the Ken Jennings board game Half Truth, I created an online version where leveraging API calls to state of the art AI models to generate true and false statements about any subject. It comes included with color coded UI responses, a scoreboard, and custom game settings. It serves at the ultimate human Turing test and is optimally played when the categories are obscure and generally unknown to all players.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>scikit-learn</title>
-      <link>http://localhost:1313/project/mask_mandate/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/mask_mandate/</guid>
-      <description>&lt;p&gt;scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>scikit-learn</title>
-      <link>http://localhost:1313/project/raindo_setup/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/raindo_setup/</guid>
-      <description>&lt;p&gt;scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>scikit-learn</title>
-      <link>http://localhost:1313/project/scikit/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/scikit/</guid>
-      <description>&lt;p&gt;scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>scikit-learn</title>
+      <title>State Population Estimates by Month (statepopsmonthly.com)</title>
       <link>http://localhost:1313/project/state_pops_monthly/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project/state_pops_monthly/</guid>
-      <description>&lt;p&gt;scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.&lt;/p&gt;</description>
+      <description>&lt;p&gt;A spinoff of the project &amp;ldquo;Bayesian Analysis of Mask Mandate Effectiveness.&amp;rdquo; I created a minimalistic website with an interactive U.S. map that allowed users to download estimated month-to-month populations of any subset of states in the U.S.. Users could customize the states, the start and end dates, and the interpolation method. The outcome was a downloaded excel file that had an individual sheet for each state with the estimated population each month over the selected range.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -98,6 +60,15 @@
       <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project/ceo/</guid>
       <description>&lt;p&gt;&amp;ldquo;Comparison of Efficient Optimizers&amp;rdquo; was a formal project write-up that compared state-of-the-art optimizers against each other. Convergence and performance were analyzed on two benchmarks to identify which optimizer researchers should use and when.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bayesian Analysis of Mask Mandate Effectiveness</title>
+      <link>http://localhost:1313/project/mask_mandate/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/mask_mandate/</guid>
+      <description>&lt;p&gt;Part of the final project for STATS 551: Bayesian Statistics. Leveraging population information from Census data and interpolating populations month-to-month, we built a hierarchical Bayesian model to estimate the effectiveness of mask mandates in all states in reducing Covid-19 cases.&lt;/p&gt;
+&lt;p&gt;tl;dr Mask mandates were effective in reducing cases; primarily so when in response to a surge in deaths in a given month.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interpolation, Django | Named After Numeral</title>
+    <link>http://localhost:1313/tags/interpolation-django/</link>
+      <atom:link href="http://localhost:1313/tags/interpolation-django/index.xml" rel="self" type="application/rss+xml" />
+    <description>Interpolation, Django</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 30 May 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu3408596154493010571.png</url>
+      <title>Interpolation, Django</title>
+      <link>http://localhost:1313/tags/interpolation-django/</link>
+    </image>
+    
+    <item>
+      <title>State Population Estimates by Month (statepopsmonthly.com)</title>
+      <link>http://localhost:1313/project/state_pops_monthly/</link>
+      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/state_pops_monthly/</guid>
+      <description>&lt;p&gt;A spinoff of the project &amp;ldquo;Bayesian Analysis of Mask Mandate Effectiveness.&amp;rdquo; I created a minimalistic website with an interactive U.S. map that allowed users to download estimated month-to-month populations of any subset of states in the U.S.. Users could customize the states, the start and end dates, and the interpolation method. The outcome was a downloaded excel file that had an individual sheet for each state with the estimated population each month over the selected range.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

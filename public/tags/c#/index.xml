@@ -5,9 +5,9 @@
     <link>http://localhost:1313/tags/c%23/</link>
       <atom:link href="http://localhost:1313/tags/c%23/index.xml" rel="self" type="application/rss+xml" />
     <description>C#</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 14 Apr 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <url>http://localhost:1313/media/icon_hu3408596154493010571.png</url>
       <title>C#</title>
       <link>http://localhost:1313/tags/c%23/</link>
     </image>
@@ -15,9 +15,9 @@
     <item>
       <title>Grid Tracker</title>
       <link>http://localhost:1313/project/tracker/</link>
-      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 14 Apr 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project/tracker/</guid>
-      <description>&lt;p&gt;The Grid Tracker is an upgrade to the supporing window of the Kingdom Hearts 2 Randomizer tracker.&lt;/p&gt;</description>
+      <description>&lt;p&gt;The Grid Tracker is an upgrade to the supporting window of the Kingdom Hearts 2 Randomizer tracker. Utilizing a game inventory tracking system, the grid updates without user input. The grid comes equipped with UI features such as right-click markdown, custom win-conditions, customizable check menu, color and icon customization, and more.&lt;/p&gt;</description>
     </item>
     
   </channel>

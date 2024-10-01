@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bayesian Statistics | Named After Numeral</title>
+    <link>http://localhost:1313/tags/bayesian-statistics/</link>
+      <atom:link href="http://localhost:1313/tags/bayesian-statistics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Bayesian Statistics</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 20 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <title>Bayesian Statistics</title>
+      <link>http://localhost:1313/tags/bayesian-statistics/</link>
+    </image>
+    
+    <item>
+      <title>Bayesian Analysis of Mask Mandate Effectiveness</title>
+      <link>http://localhost:1313/project/mask_mandate/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/mask_mandate/</guid>
+      <description>&lt;p&gt;scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

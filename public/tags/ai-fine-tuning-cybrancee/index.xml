@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI, Fine-Tuning, Cybrancee | Named After Numeral</title>
+    <link>http://localhost:1313/tags/ai-fine-tuning-cybrancee/</link>
+      <atom:link href="http://localhost:1313/tags/ai-fine-tuning-cybrancee/index.xml" rel="self" type="application/rss+xml" />
+    <description>AI, Fine-Tuning, Cybrancee</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu3408596154493010571.png</url>
+      <title>AI, Fine-Tuning, Cybrancee</title>
+      <link>http://localhost:1313/tags/ai-fine-tuning-cybrancee/</link>
+    </image>
+    
+    <item>
+      <title>R-AI-NDO Helpbot</title>
+      <link>http://localhost:1313/project/raindo_setup/</link>
+      <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/raindo_setup/</guid>
+      <description>&lt;p&gt;RAINDO is an AI that can assist with technical setup of a randomized video game. Finetuned and attentive to responses from volunteer help professionals, this bot can accurately assist with any questions about setup, logistics, FAQs, and common occurrences. The (discord) bot is also compliant with server rules, flags inappropriate queries, and can respond to questions in 55 supported languages. Increased accessibility for non-English speakers was the main motivation for this project.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
