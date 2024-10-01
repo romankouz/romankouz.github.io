@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spatial Transcriptomics | Named After Numeral</title>
+    <link>http://localhost:1313/tags/spatial-transcriptomics/</link>
+      <atom:link href="http://localhost:1313/tags/spatial-transcriptomics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Spatial Transcriptomics</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 31 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu3408596154493010571.png</url>
+      <title>Spatial Transcriptomics</title>
+      <link>http://localhost:1313/tags/spatial-transcriptomics/</link>
+    </image>
+    
+    <item>
+      <title>BayXenSmooth - Smooth and Spatial Bayesian Clustering for Xenium Data</title>
+      <link>http://localhost:1313/publication/bayxensmooth/</link>
+      <pubDate>Tue, 31 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/bayxensmooth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Graph Convolutional Network for Spatial Transcriptomics Modelling</title>
+      <link>http://localhost:1313/publication/deepst/</link>
+      <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/deepst/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

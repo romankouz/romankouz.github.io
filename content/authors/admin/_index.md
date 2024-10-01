@@ -38,7 +38,7 @@ profiles:
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/romankouz/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?hl=uk&user=TB2zU98AAAAJhttps://scholar.google.com/citations?hl=uk&user=TB2zU98AAAAJ
+    url: https://scholar.google.com/citations?user=TB2zU98AAAAJ&hl=en&oi=sra
 
 interests:
   - Artificial Intelligence
