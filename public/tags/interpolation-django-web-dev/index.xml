@@ -17,7 +17,7 @@
       <link>http://localhost:1313/project/state_pops_monthly/</link>
       <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project/state_pops_monthly/</guid>
-      <description>&lt;p&gt;A spinoff of the project &amp;ldquo;Bayesian Analysis of Mask Mandate Effectiveness.&amp;rdquo; I created a minimalistic website with an interactive U.S. map that allowed users to download estimated month-to-month populations of any subset of states in the U.S.. Users could customize the states, the start and end dates, and the interpolation method. The outcome was a downloaded excel file that had an individual sheet for each state with the estimated population each month over the selected range.&lt;/p&gt;</description>
+      <description>&lt;p&gt;A spinoff/supporting tool of the project &amp;ldquo;Bayesian Analysis of Mask Mandate Effectiveness.&amp;rdquo; I created a minimalistic website with an interactive U.S. map that allowed users to download estimated month-to-month populations of any subset of states in the U.S.. Users could customize the states, the start and end dates, and the interpolation method. The outcome was a downloaded excel file that had an individual sheet for each state with the estimated population each month over the selected range.&lt;/p&gt;</description>
     </item>
     
   </channel>

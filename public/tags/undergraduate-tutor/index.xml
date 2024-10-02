@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Undergraduate Tutor | Named After Numeral</title>
+    <link>http://localhost:1313/tags/undergraduate-tutor/</link>
+      <atom:link href="http://localhost:1313/tags/undergraduate-tutor/index.xml" rel="self" type="application/rss+xml" />
+    <description>Undergraduate Tutor</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 31 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu3408596154493010571.png</url>
+      <title>Undergraduate Tutor</title>
+      <link>http://localhost:1313/tags/undergraduate-tutor/</link>
+    </image>
+    
+    <item>
+      <title>Educational Student Services @ Case Western Reserve University</title>
+      <link>http://localhost:1313/teachings/ess/</link>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teachings/ess/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Student peer tutor in economics, chemistry, mathematics, and statistics.&lt;/li&gt;
+&lt;li&gt;Tutor Rating: 2.98/3.00 (55 sessions)&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lead Team Graduate Student Instructor | Named After Numeral</title>
+    <link>http://localhost:1313/tags/lead-team-graduate-student-instructor/</link>
+      <atom:link href="http://localhost:1313/tags/lead-team-graduate-student-instructor/index.xml" rel="self" type="application/rss+xml" />
+    <description>Lead Team Graduate Student Instructor</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 31 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu3408596154493010571.png</url>
+      <title>Lead Team Graduate Student Instructor</title>
+      <link>http://localhost:1313/tags/lead-team-graduate-student-instructor/</link>
+    </image>
+    
+    <item>
+      <title>STATS 250 @ University of Michigan</title>
+      <link>http://localhost:1313/teachings/stats250/</link>
+      <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teachings/stats250/</guid>
+      <description>&lt;p&gt;Stats 250 is a one-term, algebra-based introductory statistics course that introduces students to the investigative process of
+statistics so they may become critical consumers of statistics. Students will learn to summarize data both graphically and
+numerically and to use their understanding of variability to make inference from a sample to the population.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

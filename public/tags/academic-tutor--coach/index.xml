@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Academic Tutor &amp; Coach | Named After Numeral</title>
+    <link>http://localhost:1313/tags/academic-tutor--coach/</link>
+      <atom:link href="http://localhost:1313/tags/academic-tutor--coach/index.xml" rel="self" type="application/rss+xml" />
+    <description>Academic Tutor &amp; Coach</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 31 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu3408596154493010571.png</url>
+      <title>Academic Tutor &amp; Coach</title>
+      <link>http://localhost:1313/tags/academic-tutor--coach/</link>
+    </image>
+    
+    <item>
+      <title>Hermiona Education</title>
+      <link>http://localhost:1313/teachings/hermiona/</link>
+      <pubDate>Tue, 31 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teachings/hermiona/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Assisted aspiring international college students with their applications to U.S. universities.&lt;/li&gt;
+&lt;li&gt;Academic tutor for computer science and mathematics ranging from Algebra I to Calculus III.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
