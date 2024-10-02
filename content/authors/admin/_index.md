@@ -102,12 +102,12 @@ work:
       - Led the generation, fine-tuning, and statistical evaluation of large language models used by management service
       providers (MSPs).
       - Implemented an AI system that optimized MSP talent deployment, improving ticket resolution times.
-      - Developed and deployed a multi-agentic workflow that assigned specific sub-tasks to specialized agents, increasingquery resolution efficiency and decreasing hallucinations.
-      - Led a team of four senior engineers and collaborated with two PhD researchers in economics and psychometrics to ship 
+      - Developed and deployed a multi-agentic workflow that assigned specific sub-tasks to specialized agents, decreasing hallucinations by nearly 100%.
+      - Led a team of four senior software engineers and collaborated with two PhD researchers in economics and psychometrics to ship an autonomous, intelligent agent for IT ticket deployments. 
   - position: Data Science Intern
     company_name: Progressive
     company_url: 'https://www.progressive.com/'
-    company_logo: 'brands/UM'
+    company_logo: 
     date_start: 2019-05-01
     date_end: 2019-08-31
     summary: |
