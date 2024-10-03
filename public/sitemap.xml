@@ -30,12 +30,20 @@
     <lastmod>2024-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/teachings/</loc>
+    <loc>http://localhost:1313/tags/vi/</loc>
     <lastmod>2024-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/tags/vi/</loc>
-    <lastmod>2024-12-31T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/graduate-student-instructor/</loc>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/teachings/stats507/</loc>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/teachings/</loc>
+    <lastmod>2024-09-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:1313/tags/ai-fine-tuning-cybrancee/</loc>
@@ -168,10 +176,6 @@
   </url><url>
     <loc>http://localhost:1313/event/jsm/</loc>
     <lastmod>2023-08-05T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:1313/tags/graduate-student-instructor/</loc>
-    <lastmod>2023-05-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:1313/teachings/stats306/</loc>
