@@ -12,10 +12,10 @@ sections:
   - block: collection
     content:
       title: Volunteering
-      text: If I can't apply my skills and passions to make a meaningful impact for others, it loses its purpose for me. In my free time, I love devoting my energy to great causes.
+      text: In my free time, I organize large scale tournaments with donations and process going to charity.
       filters:
         folders:
-          - volunteering
+          - volunteerings
     design:
       view: article-grid
       fill_image: false

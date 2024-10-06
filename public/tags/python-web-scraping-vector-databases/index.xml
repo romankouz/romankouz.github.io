@@ -19,7 +19,7 @@
       <guid>http://localhost:1313/project/gpt_crawler_py/</guid>
       <description>&lt;p&gt;A GPT knowledge file web crawler in base python. Inspired by Builder IO&amp;rsquo;s 
  and the 
- by A-baoYang, I decided to create my own version which is a bit lighter on prerequisites. Despite both of these being very accessible, installing any combination of node, chromium, and playwright can be a pain if your hosting provider does not support installing these dependencies. Therefore, I rewrote the project using only Python&amp;rsquo;s os, requests, and beautifulsoup4 libraries.&lt;/p&gt;</description>
+ by A-baoYang, I decided to create my own version which is a bit lighter on prerequisites. Despite the prior works being very accessible, installing any combination of node, chromium, and playwright can be a pain if your hosting provider does not support installing these dependencies. Therefore, I rewrote the project using only Python&amp;rsquo;s os, requests, and beautifulsoup4 libraries.&lt;/p&gt;</description>
     </item>
     
   </channel>

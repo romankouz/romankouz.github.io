@@ -253,5 +253,14 @@
     <loc>http://localhost:1313/tags/undergraduate-tutor/</loc>
     <lastmod>2018-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/volunteerings/aha/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/volunteerings/hope/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>http://localhost:1313/volunteerings/</loc>
+    <changefreq>weekly</changefreq>
   </url>
 </urlset>
