@@ -1,6 +1,6 @@
 ---
 title: Project Hope for Ukranian Humanitarian Aid
-summary: Take full control of your personal brand and privacy by migrating away from the big tech platforms!
+summary: Charity tournament series for Project Hope.
 date: 2024-06-15
 
 # Featured image
