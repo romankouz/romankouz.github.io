@@ -12,7 +12,7 @@ sections:
   - block: collection
     content:
       title: Volunteering
-      text: In my free time, I organize large scale tournaments with donations and process going to charity.
+      text: In my free time, I organize (or help organize) large scale tournaments with donations and process going to charity.
       filters:
         folders:
           - volunteerings
