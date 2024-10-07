@@ -5,8 +5,10 @@ external_link:
 tags:
   - Graduate Student Instructor
 ---
+This is an introductory data science course based on the Python programming language. Topics covered include data structures, numpy packages (numpy, pandas, tensorflow), program design, and algorithms.
+
+
 <u>Data Science and Analytics using Python</u>
 
-This is an introductory statistical computing course based on the R programming language. Topics covered include data cleaning, visualization, basics of programming in R, and basics of statistical modeling.
-
+Also taught in Fall 2020, Spring 2024.
 <!--more-->

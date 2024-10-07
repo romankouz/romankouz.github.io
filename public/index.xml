@@ -25,8 +25,9 @@
       <link>http://localhost:1313/teachings/stats507/</link>
       <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/teachings/stats507/</guid>
-      <description>&lt;p&gt;&lt;u&gt;Data Science and Analytics using Python&lt;/u&gt;&lt;/p&gt;
-&lt;p&gt;This is an introductory statistical computing course based on the R programming language. Topics covered include data cleaning, visualization, basics of programming in R, and basics of statistical modeling.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is an introductory data science course based on the Python programming language. Topics covered include data structures, numpy packages (numpy, pandas, tensorflow), program design, and algorithms.&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Data Science and Analytics using Python&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;Also taught in Fall 2020, Spring 2024.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -63,7 +64,7 @@
       <link>http://localhost:1313/volunteerings/hope/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/volunteerings/hope/</guid>
-      <description>&lt;p&gt;Slava Ukraini!&lt;/p&gt;
+      <description>&lt;p&gt;Slava Ukraini! Since the original date of the invasion of February 24, 2022, I have been hosting charity events to raise money for humanitarian aid for Ukrainian civilians.&lt;/p&gt;
 
 
 
@@ -73,13 +74,11 @@
   &lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
     &lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;Overview&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#results&#34;&gt;Results&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#crowd-funded-open-source-software&#34;&gt;Crowd-funded open-source software&lt;/a&gt;
+    &lt;li&gt;&lt;a href=&#34;#results&#34;&gt;Results&lt;/a&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#-click-here-to-become-a-sponsor-and-help-support-hugo-bloxs-future-httpshugobloxcomsponsor&#34;&gt;&lt;a href=&#34;https://hugoblox.com/sponsor/&#34;&gt;❤️ Click here to become a sponsor and help support Hugo Blox&amp;rsquo;s future ❤️&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#-click-here-to-contribute-to-project-hopehttpssecureprojecthopeorgsitespagenavigator2024_multistep_mainhtmlautologintruemfc_preftfrequencymonthlyamount50_gl13s9qn_gaodi2ntgwodiylje3mjgynjeynde_ga_8nfjetdx8hmtcyodi2mti0ms4xljeumtcyodi2mti1os40mi4wlja&#34;&gt;&lt;a href=&#34;https://secure.projecthope.org/site/SPageNavigator/2024_Multistep_Main.html?autologin=true&amp;amp;mfc_pref=T&amp;amp;frequency=monthly&amp;amp;amount=50&amp;amp;_gl=1*3s9qn*_ga*ODI2NTgwODIyLjE3MjgyNjEyNDE.*_ga_8NFJETDX8H*MTcyODI2MTI0MS4xLjEuMTcyODI2MTI1OS40Mi4wLjA.&#34;&gt;❤️ Click here to contribute to Project HOPE!&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#as-a-token-of-appreciation-for-sponsoring-you-can-unlock-thesehttpshugobloxcomsponsor-awesome-rewards-and-extra-features-&#34;&gt;As a token of appreciation for sponsoring, you can &lt;strong&gt;unlock &lt;a href=&#34;https://hugoblox.com/sponsor/&#34;&gt;these&lt;/a&gt; awesome rewards and extra features 🦄✨&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
   &lt;/div&gt;
@@ -87,20 +86,18 @@
 
 &lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Organized 2 events with a total of 177 participants.&lt;/li&gt;
+&lt;li&gt;Organized 2 tournament events with a total of 177 participants.&lt;/li&gt;
+&lt;li&gt;Organized 4 supplementary events to amplify donation contributions.&lt;/li&gt;
 &lt;li&gt;Led a team of editors, organizers, promoters, translators, and commentators totalling a team of nearly 100 people.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Raised $17,500 for Project HOPE&amp;rsquo;s Ukraine Crisis Fund.&lt;/li&gt;
-&lt;li&gt;Money went towards providing emergency supplies, hygiene kits, and dignitiy kits for displaced Ukrainians civilians.&lt;/li&gt;
+&lt;li&gt;Money went towards providing emergency supplies, hygiene kits, and dignitiy kits for displaced Ukrainians.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;crowd-funded-open-source-software&#34;&gt;Crowd-funded open-source software&lt;/h2&gt;
-&lt;p&gt;To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.&lt;/p&gt;
-&lt;h3 id=&#34;-click-here-to-become-a-sponsor-and-help-support-hugo-bloxs-future-httpshugobloxcomsponsor&#34;&gt;
+&lt;h3 id=&#34;-click-here-to-contribute-to-project-hopehttpssecureprojecthopeorgsitespagenavigator2024_multistep_mainhtmlautologintruemfc_preftfrequencymonthlyamount50_gl13s9qn_gaodi2ntgwodiylje3mjgynjeynde_ga_8nfjetdx8hmtcyodi2mti0ms4xljeumtcyodi2mti1os40mi4wlja&#34;&gt;
 &lt;/h3&gt;
-&lt;h2 id=&#34;as-a-token-of-appreciation-for-sponsoring-you-can-unlock-thesehttpshugobloxcomsponsor-awesome-rewards-and-extra-features-&#34;&gt;As a token of appreciation for sponsoring, you can &lt;strong&gt;unlock 
- awesome rewards and extra features 🦄✨&lt;/strong&gt;&lt;/h2&gt;
+&lt;hr&gt;
 </description>
     </item>
     
@@ -494,7 +491,7 @@
 
 
 
-&lt;div id=&#34;chart-647829153&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-643178259&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -512,7 +509,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-647829153&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-643178259&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -918,8 +915,8 @@ Parallel 4   :         des6, after des4, 1d
       <link>http://localhost:1313/teachings/stats306/</link>
       <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/teachings/stats306/</guid>
-      <description>&lt;p&gt;&lt;u&gt;Introduction to Statistical Computing&lt;/u&gt;&lt;/p&gt;
-&lt;p&gt;This is an introductory statistical computing course based on the R programming language. Topics covered include data cleaning, visualization, basics of programming in R, and basics of statistical modeling.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is an introductory statistical computing course based on the R programming language. Topics covered include data cleaning, visualization, basics of programming in R, and basics of statistical modeling.&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Introduction to Statistical Computing&lt;/u&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -927,10 +924,11 @@ Parallel 4   :         des6, after des4, 1d
       <link>http://localhost:1313/teachings/stats250/</link>
       <pubDate>Sat, 31 Dec 2022 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/teachings/stats250/</guid>
-      <description>&lt;p&gt;&lt;u&gt;Introduction to Statistics and Data Analysis&lt;/u&gt;&lt;/p&gt;
-&lt;p&gt;Stats 250 is a one-term, algebra-based introductory statistics course that introduces students to the investigative process of
+      <description>&lt;p&gt;Stats 250 is a one-term, algebra-based introductory statistics course that introduces students to the investigative process of
 statistics so they may become critical consumers of statistics. Students will learn to summarize data both graphically and
-numerically and to use their understanding of variability to make inference from a sample to the population.&lt;/p&gt;</description>
+numerically and to use their understanding of variability to make inference from a sample to the population.&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Introduction to Statistics and Data Analysis&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;Also taught in Fall 2021, Spring 2022.&lt;/p&gt;</description>
     </item>
     
     <item>

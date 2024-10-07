@@ -5,10 +5,12 @@ external_link:
 tags:
   - Lead Team Graduate Student Instructor 
 ---
-<u>Introduction to Statistics and Data Analysis</u>
-
 Stats 250 is a one-term, algebra-based introductory statistics course that introduces students to the investigative process of
 statistics so they may become critical consumers of statistics. Students will learn to summarize data both graphically and
 numerically and to use their understanding of variability to make inference from a sample to the population.
+
+<u>Introduction to Statistics and Data Analysis</u>
+
+Also taught in Fall 2021, Spring 2022.
 
 <!--more-->
