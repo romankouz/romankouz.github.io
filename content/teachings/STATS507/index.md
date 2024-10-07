@@ -5,7 +5,7 @@ external_link:
 tags:
   - Graduate Student Instructor
 ---
-This is an introductory data science course based on the Python programming language. Topics covered include data structures, numpy packages (numpy, pandas, tensorflow), program design, and algorithms.
+This is a master's level data science course based on the Python programming language. Topics covered include data structures, numpy packages (numpy, pandas, tensorflow), program design, and algorithms.
 
 
 <u>Data Science and Analytics using Python</u>
