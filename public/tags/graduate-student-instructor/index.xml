@@ -17,8 +17,9 @@
       <link>http://localhost:1313/teachings/stats507/</link>
       <pubDate>Mon, 30 Sep 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/teachings/stats507/</guid>
-      <description>&lt;p&gt;&lt;u&gt;Data Science and Analytics using Python&lt;/u&gt;&lt;/p&gt;
-&lt;p&gt;This is an introductory statistical computing course based on the R programming language. Topics covered include data cleaning, visualization, basics of programming in R, and basics of statistical modeling.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is an introductory data science course based on the Python programming language. Topics covered include data structures, numpy packages (numpy, pandas, tensorflow), program design, and algorithms.&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Data Science and Analytics using Python&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;Also taught in Fall 2020, Spring 2024.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -26,8 +27,8 @@
       <link>http://localhost:1313/teachings/stats306/</link>
       <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/teachings/stats306/</guid>
-      <description>&lt;p&gt;&lt;u&gt;Introduction to Statistical Computing&lt;/u&gt;&lt;/p&gt;
-&lt;p&gt;This is an introductory statistical computing course based on the R programming language. Topics covered include data cleaning, visualization, basics of programming in R, and basics of statistical modeling.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is an introductory statistical computing course based on the R programming language. Topics covered include data cleaning, visualization, basics of programming in R, and basics of statistical modeling.&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Introduction to Statistical Computing&lt;/u&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
