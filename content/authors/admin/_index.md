@@ -128,10 +128,18 @@ skills:
         description: 'bayesian regression, variational inference, hierarchical modelling'
         percent: 100
         icon: chart-bar
+      - name: Programming
+        description: Python, R, SQL, C#, Stata, Javascript, Matlab
+        percent: 100
+        icon: custom/keyboard-regular
+      - name: Data Science
+        description: 'time series forecasting, decision trees, clustering, scalable data algorithms, graphical modelling'
+        percent: 100
+        icon: custom/database-solid
       - name: Deep Learning
         description: 'neural networks, LLMs, statistical model evaluation'
         percent: 95
-        icon: brain
+        icon: custom/network-wired-solid
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
@@ -139,7 +147,7 @@ skills:
       - name: Software Development
         description: ''
         percent: 100
-        icon: 
+        icon: custom/uncharted-brands-solid
       - name: Charity Fundraising
         description: ''
         percent: 100
@@ -147,7 +155,7 @@ skills:
       - name: Teaching
         description: ''
         percent: 100
-        icon: chalkboard
+        icon: custom/chalkboard-solid
       - name: Poker
         description: ''
         percent: 75
