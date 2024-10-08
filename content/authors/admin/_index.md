@@ -133,7 +133,7 @@ skills:
         percent: 100
         icon: custom/keyboard-regular
       - name: Data Science
-        description: 'time series forecasting, decision trees, clustering, scalable data algorithms, graphical modelling'
+        description: 'time series forecasting, decision trees, clustering, scalable data algorithms (Hadoop, Spark, Tableau), graphical modelling'
         percent: 100
         icon: custom/database-solid
       - name: Deep Learning
