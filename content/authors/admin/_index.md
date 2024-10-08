@@ -121,33 +121,37 @@ skills:
   - name: Technical Skills
     items:
       - name: Python
-        description: ''
-        percent: 80
-        icon: code-bracket
-      - name: Data Science
-        description: ''
+        description: 'numpy, pandas/polars, scipy, tensorflow, pytorch, pymc3, nltk, beautifulsoup'
+        percent: 100
+        icon: python
+      - name: Bayesian Statistics
+        description: 'bayesian regression, variational inference, hierarchical modelling'
         percent: 100
         icon: chart-bar
-      - name: SQL
-        description: ''
-        percent: 40
-        icon: circle-stack
+      - name: Deep Learning
+        description: 'neural networks, LLMs, statistical model evaluation'
+        percent: 95
+        icon: brain
   - name: Hobbies
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
+      - name: Software Development
         description: ''
         percent: 100
-        icon: cat
-      - name: Photography
+        icon: 
+      - name: Charity Fundraising
         description: ''
-        percent: 80
-        icon: camera
+        percent: 100
+        icon: custom/hand-holding-heart-solid
+      - name: Teaching
+        description: ''
+        percent: 100
+        icon: chalkboard
+      - name: Poker
+        description: ''
+        percent: 75
+        icon: custom/diamond-solid
 
 languages:
   - name: English
