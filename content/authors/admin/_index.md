@@ -104,6 +104,8 @@ work:
       - Implemented an AI system that optimized MSP talent deployment, improving ticket resolution times.
       - Developed and deployed a multi-agentic workflow that assigned specific sub-tasks to specialized agents, decreasing hallucinations by nearly 100%.
       - Led a team of four senior software engineers and collaborated with two PhD researchers in economics and psychometrics to ship an autonomous, intelligent agent for IT ticket deployments. 
+      - Assistant author of a collection of structural equation models meant for tracking experiential learning of burgeoning IT talent.
+      - Front end consultant of time series visualization for metrics including workload variation, burnout, churn, and expected profit.
   - position: Data Science Intern
     company_name: Progressive Insurance
     company_url: 'https://www.progressive.com/'
