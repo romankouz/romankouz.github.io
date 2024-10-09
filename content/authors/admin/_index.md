@@ -105,7 +105,7 @@ work:
       - Developed and deployed a multi-agentic workflow that assigned specific sub-tasks to specialized agents, decreasing hallucinations by nearly 100%.
       - Led a team of four senior software engineers and collaborated with two PhD researchers in economics and psychometrics to ship an autonomous, intelligent agent for IT ticket deployments. 
   - position: Data Science Intern
-    company_name: Progressive
+    company_name: Progressive Insurance
     company_url: 'https://www.progressive.com/'
     company_logo: 
     date_start: 2019-05-01
