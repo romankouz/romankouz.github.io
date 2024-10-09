@@ -150,18 +150,18 @@
     </item>
     
     <item>
-      <title>Projects</title>
-      <link>http://localhost:1313/volunteering/</link>
-      <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/volunteering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Teaching</title>
       <link>http://localhost:1313/teaching/</link>
       <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/teaching/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Volunteering</title>
+      <link>http://localhost:1313/volunteering/</link>
+      <pubDate>Sun, 19 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/volunteering/</guid>
       <description></description>
     </item>
     
@@ -460,7 +460,7 @@
 
 
 
-&lt;div id=&#34;chart-285976134&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-764283519&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -478,7 +478,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-285976134&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-764283519&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
