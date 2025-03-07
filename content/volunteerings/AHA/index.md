@@ -18,13 +18,12 @@ tags:
 
 ## Overview
 
-- Led a charity incentive as part of a fundraising marathon for the American Heart Association.
-- Crafted a format that exchange user donation contributions for rewards in content.
+- Led charity incentives as part of fundraising marathons for the American Heart Association.
 
 ## Results
 
-- Raised $600+ for the American Heart Association during my feature.
-- The total event raised $6,000!
+- Raised $1,400+ for the American Heart Association during my features.
+- The total event raised $13,000!
 
 ### [❤️ Click here to contribute to the AHA!](https://www.heart.org/en/get-involved/ways-to-give?form=FUNELYZXFBW)
 ---
