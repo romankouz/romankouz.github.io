@@ -31,8 +31,6 @@ jobs:
       with:
           # Fetch history for Hugo's .GitInfo and .Lastmod
         fetch-depth: 0
-    - name: Download upload-artifact action
-      uses: actions/upload-artifact@v3
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
