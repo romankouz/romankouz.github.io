@@ -1,7 +1,7 @@
 ---
 title: State Population Estimates by Month (statepopsmonthly.com)
 date: 2022-05-30
-external_link: https://www.statepopsmonthly.com/
+external_link: https://roko2.pythonanywhere.com/
 tags:
   - Interpolation, Django, Web Dev
 ---

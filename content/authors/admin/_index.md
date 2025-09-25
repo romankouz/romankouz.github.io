@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: PhD Candidate
+role: PhD
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -41,21 +41,23 @@ profiles:
     url: https://scholar.google.com/citations?user=TB2zU98AAAAJ&hl=en&oi=sra
 
 interests:
-  - Artificial Intelligence
-  - Bayesian Statistical Inference
-  - Computational Biology
-  - Spatial Inference
+  - Artificial Intelligence:
+      - LLMs
+      - Recommendation
+  - Bayesian Statistical Inference:
+      - Variational Inference
+      - Bayesian Spatial Signaling
 
 education:
-  - area: PhD Candidate in Statistics
+  - area: PhD in Statistics
     institution: University of Michigan
     date_start: 2021-08-15
     date_end: 2025-05-31
     summary: |
-      Thesis on Advanced Statistical Inference in Spatial Transcriptomics. Lead author of deepST and BayXenSmooth models.
-    # button:
-    #   text: 'Read Thesis'
-    #   url: 'https://example.com'
+      Thesis Title: "Statistical Inference for Spatial Transcriptomics in the Age of Deep Learning". Lead author of SPICE (formerly DeepST), BayXenSmooth, and XenNF models.
+    button:
+      text: 'Read Thesis'
+      url: 'uploads/Spatial_Transcriptomics_Thesis_OARD.pdf'
   - area: MA in Statistics
     institution: University of Michigan
     date_start: 2019-08-15
@@ -123,7 +125,7 @@ skills:
   - name: Technical Skills
     items:
       - name: Python
-        description: 'numpy, pandas/polars, scipy, tensorflow, pytorch, pymc3, nltk, beautifulsoup'
+        description: 'numpy, pandas/polars, scipy, pytorch, tensorflow, pytorch, pymc3, nltk, beautifulsoup'
         percent: 100
         icon: python
       - name: Bayesian Statistics

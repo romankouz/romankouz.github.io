@@ -37,11 +37,11 @@ sections:
       text: |-
         Hi there! I'm Roman. I love all things data, statistics, artificial intelligence, and software engineering. 
 
-        I am a researcher and developer that thrives on making utilitarian products for niche demographics. 
+        I am a former academic researcher and current AI/ML engineer that thrives on making utilitarian products for niche demographics. 
         
-        As a researcher, my work is relevant to computational biologists, bioinformaticians, biostatisticians, genomics researchers, and anyone with an interest in spatial groupings and spatial mathematics.
+        As a researcher in spatial transcriptomics, my work was relevant to computational biologists, bioinformaticians, biostatisticians, genomics researchers, and anyone with an interest in spatial groupings and spatial mathematics. My work was most applicable to scientists who were interested in interpretable statistical inference of spatial cell-cell communication events.
 
-        As a developer, my work has helped automate IT ticket assignments, evaluate worker optimizations, answer tech setup questions with AI in 26 languages, and eliminate hallucinations in LLM by implementing novel agentic workflows.
+        As a developer, my work has helped automate IT ticket assignments, evaluate worker optimizations, answer tech setup questions with AI in 26 languages, eliminate hallucinations in LLM by implementing novel agentic workflows, and help companies do PnL and reserve forecasting.
 
         
     design:
